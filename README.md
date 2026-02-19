@@ -1,7 +1,86 @@
 <img src="https://github.com/edterbak/NodeRed_Heishamon_control/blob/main/images/banners/top_banner.png" width="1000">
 
-Changelog of the Alpha's:
+Unfold to see the FULL changelog of the released alpha and Beta versions:
 <details>
+
+<br>
+<h3>Version 26.1.4 Beta</h3>
+Changes:</br>
+- Enhancement: Add flow version during boot.</br>
+- Fix: RTC tab did not show final correction.</br>
+- Fix: Temperature graph showed WATER instead of ROOM temperature target.
+
+Version 26.1.3 Beta</br>
+Changes:</br>
+- Enhancement: RTC Charts in combination with automations. In automations you can now select the target zone. By doing so, the Trigger/Revert lines are shown in the target chart only.</br>
+- Enhancement: RCT automation now offers option to select the target zone. The automation will only function on 1 zone.</br>
+- Enhancement: Made the RTC zone1/2 automation functional
+  
+<h3>Version 26.1.2 Beta</h3>
+Changes:</br>
+- Enhancement: HEAT setpoints are now sent during DHW runs where they were previously blocked.</br>
+- Fix System Health info: Scheduler information has never been updated in system health stats. This has now partially been fixed.</br>
+- Improvement: RTC linear calculation toggle now available and working for zone 2 and on the right dashboard. </br>
+- Enhancement: Efficiency, added visuals for current values and a table for historical data. >> New pallette: https://flows.nodered.org/node/node-red-node-ui-table</br>
+- Fix: Sensor input. Added protection against NaN values in node Sensorx
+
+<h3>Version 26.1.1 Beta</h3>
+Changes:</br>
+- Fix Chart storage: SoftStart chart. Chart survives restarts now.</br>
+- Fix Chart storage: Efficiency - Energy. Chart survives restarts now.</br>
+- Fix Chart storage: Efficiency - Efficiency. Chart survives restarts now.</br>
+- Fix Boot behavior: Heat Delta, Cool Delta and SetHeaterDelayTime during startup.</br>
+- Fix MQTT: Do not start command checking when not all current values are known.</br>
+- Fix MQTT: Command checking functionality now first looks if the actual value is already the same as the new command value. If so, it does not perform the checking loop.</br>
+
+<h3>Version 25.06 (! Beta 6 !)</h3>
+Changes:</br>
+- Enhancement: Merged both Compare SP (z1) and (z2) functions into a single function. This reduces simultaneous sending of the same setcurve mqtt command.</br>
+- Enhancement: Modified the function to check all sent MQTT commands. Now command prefix independant.</br>
+- Enhancement: Added a small function to throttle the amount of MQTT commands being sent ad a time. Rate limit is set  to 1 per 7 seconds. All commands are queued. </br>
+- Fix Scheduler: some conditions did not pass with '==='. fixed.</br>
+
+<h3>Version 25.06 (! Beta 5 !)</h3>
+Changes:</br>
+- Fix Softstart: Buffertank enabled would have bad performance. Variable was not initialized propperly.</br>
+- Fix Zone2: No change in setpoint being sent other than 0 or 1. There was a math error.</br>
+- Fix Zone2: MQTT Comand spamming resolved.</br>
+- New Feature: Created a generic control mechanism to verify sent commands have been processed. If not, a retry is initiated with a maximum retrycount of 3 for each topic. This is done for a couple of the most important commands.</br>
+- Added an auto-tuning noice filter to the input sensors by default.</br>
+- Fix Scheduler: Toggle functions to accomadate zone 1 and zone 2 were not adjusted yet. Now they should be working</br>
+- Fix Scheduler: Removing line 2 did not work. Now it does. 
+
+<h3>Version 25.06 (! BETA 4 !)</h3>
+Changes:</br>
+- Fix SP_Final: Initial calculation did not resolve. Resulting in no mqtt commands being sent to set heat. If you do not experience issues with Beta 3, you do not need to update. Thanks to Breadrun @ Tweakers.net for the good suggestion.</br>
+
+
+<h3>Version 25.06 (! BETA 3 !)</h3>
+Changes:</br>
+- Fix CCC: Incorrectly used TOP27 instead of TOP42/TOP43 for zone 1/2. Corrected this.</br>
+- Improvement: HEAT commands are being sent in more situations now. Even when DHW-only is active.<br>
+- Improvement: SoftStart function. Logic revised to have less limitations.<br>
+- Improvement: SoftStart function. More information in the softstart tab <br>
+- Improvement: The resending of Set Heat commands is abandoned. I now assume a sent message will be received. No active checking every 28seconds anymore.<br>
+- Improvement: Dashboard generic. Layout changes, making it more uniform (half way through the process now)<br>
+- Improvement: Scheduler conditions - Modified the lowerlimit of the outside temperature condition from 0 to -20</br>
+<br>
+**Important notice:** <br>
+This version does NOT check if a command for HEAT has been received and set. It assumes after sending, it is set. This prevents the issue of needles resending commands fully. However, the QOS level of the MQTT command has been increased to level 2 to make sure the heishamon did receive it. <br>
+
+<h3>Version 25.06 (! BETA 2 !)</h3>
+Changes:</br>
+- Fix CCC: In Direct mode, disabling CCC function set the target temperature to 20 instead of the given setpoint.</br>
+- Fix SoftStart: When using buffertank and softstart together, the setpoint could be set too low, triggering the compressor-stop.</br>
+- Enhancement: PumpSpeed function added the active mode in the graph (Mode 0=Function off / 1=Low / 2=HEAT / 3=DHW)</br>
+- Enhancement: Added a LOT of additional external link-in nodes in WP Input tab. </br>
+
+<h3>Version 25.06 (! BETA 1!)</h3>
+Changes:</br>
+- Fix SoftStart: Aligned the function to operate better with 2 zones</br>
+- Fix SoftStart: Fixed an error in fetching RTC z2 result. It was fetching RTC z1 result</br>
+- Fix CCC: Zone 2 logic was different from Zone 1 logic</br>
+- Enhancement: Added a LOT of new external input options in the tab [WP Input] (WIP)</br>
 
 <h3>Version 25.05 (! ALPHA 8!)</h3>
 Changes:</br>
@@ -14,7 +93,7 @@ Changes:</br>
 
 **If you experience issues with this version and you have a buffer, please try disabling SoftStart function !**
 
-<h3>Version 25.05 (! ALPHA 8!)</h3>
+<h3>Version 25.05 (! ALPHA 7!)</h3>
 Changes:</br>
 - Fixed SoftStart function. It was dead...</br>
 - Changed a little bit on logging for 2 zones. Should be quieter now in the log</br>
@@ -54,42 +133,34 @@ Changes:</br>
 
 ---
 
-## About v25.05 ALPHA 8  
-<h1>⚠️ Getting close to a stable version. ** ⚠️</h1>
+## About v26.1.4 BETA
+<h1>⚠️ ** Probably the last beta ** ⚠️</h1>
 
-**>>> But, I still really need your help for testing !!!  Read below <<<**
+**Attention !** <br>
+ - Additional NodeRed pallette required to install "node-red-node-ui-table" <br>
+ Link: https://flows.nodered.org/node/node-red-node-ui-table
 
----
 
-## I Need Your Help for Step 2  
-
-To move forward, I need **a volunteer with a 2-zone/buffertank**.  
-
-What’s required:  
-- Access to your **dashboard + flow editor + Heishamon web**  
-- Remote access (TeamViewer, Remote Desktop, etc.)  
-- Optionally, voice call support (Discord, etc.)  
-
-📧 If you’re interested, please email me at **ed_terbak@hotmail.com** with:  
-- Your name  
-- Your Panasonic setup (zones, buffer, etc.)  
-- Your availability  
-- Preferred method for testing/debugging access  
-- Info on how you can make proper backups
-  
----
-
-### Background  
-When I started this project, it was purely for my own use. I was still learning Node-RED, JavaScript, object-based programming—everything was new to me.  
-
-Later, I decided to share the project. To my surprise, there was a lot of interest and it was very well received.  
-
-One of the most frequent requests has been better compatibility with different hardware setups—for example, **2-zone operation** or **using a buffer tank**.  
-Building this is not that easy because I myself do not own the hardware to be able to test and build it around. 
+**>>> But, I still really need your help for testing !!!**
 
 ---
 
-### What’s New in This Alpha  
+### Background 
+Question: Why do I need your help so much?
+Answer: Well, when I started this project, it was purely for my own use. I was still learning Node-RED, JavaScript, object-based programming—everything was new to me. And to be frank, I think I still have a lot of room to improve / learn.... 
+
+But later, I decided to share the project. To my surprise, there was a lot of interest and it was very well received.  
+And even more later, I became aware of the incompatibility with other hardware setups, like people with 2 zones active, or with a buffertank, etc. 
+There were frequent requests were to improve compatibility with the different hardware setups.   
+Building this is not that easy as it sounds, because 
+- I myself do not own the hardware to be able to test and build it.
+- I needed to restructure and rewrite the already existing functions
+- I needed to restructure the already existing variables to handle multizone
+- I lack the knowledge on how those other hardware setups behave and react
+
+---
+
+### What’s New in This Beta  
 In this release, I’ve reworked the dashboard to support **two operational zones**. This required a lot of changes under the hood.  
 
 Here’s a short overview of the main impacts:  
@@ -101,7 +172,8 @@ Here’s a short overview of the main impacts:
 - **NightReduction function**: separated from zone logic (not zone-dependent)  
 - **Sensors**: added support for a second room sensor  
 - **Scheduler**: updated to allow 2-zone specification  
-- **Setpoint logic**: rewritten for handling 2 separate zones  
+- **Setpoint logic**: rewritten for handling 2 separate zones
+- **Extra Input's**: Added a lot of new external input connections to the dashboard (See tab: WP Input)
 
 **In short:** this was a **major effort**—every step uncovered more complexity.  
 
@@ -115,13 +187,15 @@ Here’s a short overview of the main impacts:
 - Zone control (Water)  
 - Zone control (Internal Thermostat)  
 - 1-zone setups  
+- 2-zone setups
+- Buffer tank setups. I *think* it should work.
 
 🔧 **Still to do:**  
 - **RTC Automation**:  
   - Add toggle “Enable between X and Y” for zones 1/2  
   - Ensure automation is bound to a specific zone (independent modes could conflict)  
 - **Cooling function**: currently only works for 1 zone → needs expansion to 2 zones  
-- **Buffer tank**: uncertain. I *think* it should already work with 2-zone operation, but needs deeper testing later  
+
 
 ---
 
