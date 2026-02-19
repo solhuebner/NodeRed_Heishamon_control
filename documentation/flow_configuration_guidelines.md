@@ -51,3 +51,17 @@ First verify it is the function that is at fault by disabling the function.
 [Top](#top) / [Back](../readme.md)
 
 *******
+### Rule 5: A heatpump has a stable operating window
+If you set the target temperature (HEAT) of the heatpump too low, it has the following consequense:
+1. The temperature difference of your internal house vs water temperaturer decreases. This is the drivingforce for heat-energy flow. This dictates the dissapation rate of heat-energy from the heatpump into your house.
+2. The heatpump has a minimum amount of heat produced. It can not reduce the compressor frequency more.
+
+If you balance these two incorrectly, you will have by nature a lot of stop-starts of the compressor. <br>
+The SoftStart function cannot solve that. 
+
+[Top](#top) / [Back](../readme.md)
+
+*******
+
+
+
