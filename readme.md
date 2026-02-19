@@ -26,7 +26,7 @@
 - [Requirements](documentation/requirements.md)
 - [Installation](documentation/nodered_installation.md)
 	- [Node Red](documentation/nodered_installation.md#node-red-installation)
-		- [Persistant storage](documentation/nodered_installation.md#persistant-storage)
+		- [Persistent storage](documentation/nodered_installation.md#persistent-storage)
  		- [Required Node Red libraries/pallets](documentation/nodered_installation.md#required-node-red-librariespallets)
   		- [Timezone setup](documentation/nodered_installation.md#timezone-setup)
     - [Flow](documentation/flow_installation.md)
