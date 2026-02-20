@@ -25,9 +25,9 @@
 - [Gallery](documentation/gallery.md)
 - [Requirements](documentation/requirements.md)
 - [Installation](documentation/nodered_installation.md)
-	- [Node Red](documentation/nodered_installation.md#node-red-installation)
+	- [Node-Red](documentation/nodered_installation.md#node-red-installation)
 		- [Persistent storage](documentation/nodered_installation.md#persistent-storage)
- 		- [Required Node Red libraries/pallets](documentation/nodered_installation.md#required-node-red-librariespallets)
+ 		- [Required Node-Red libraries/pallets](documentation/nodered_installation.md#required-node-red-librariespallets)
   		- [Timezone setup](documentation/nodered_installation.md#timezone-setup)
     - [Flow](documentation/flow_installation.md)
     	- [Import](documentation/flow_installation.md#1-download)
@@ -48,7 +48,7 @@
 ********
 
 ## Abstract
-`HeishaMoNR` is a **Node Red flow** which gives you a user friendly dashboard for local control of your Panasonic heatpump.<br>
+`HeishaMoNR` is a **Node-Red flow** which gives you a user friendly dashboard for local control of your Panasonic heat pump.<br>
 
 [Top](#top)
 
@@ -56,9 +56,9 @@
 
 <a id="introduction"></a>
 ## Introduction
-You can connect your Panasonic heatpump to the default CZ-TAW1 module. Then you are locked in the Panasonic ecosystem depending on using the wallmounted controller or Aquarea Smart Cloud.
+You can connect your Panasonic heat pump to the default CZ-TAW1 module. Then you are locked in the Panasonic ecosystem depending on using the wallmounted controller or Aquarea Smart Cloud.
 
-Alternatively you can connect and control your Panasonic heatpump locally with Heishamon. The heishamon board is created by Egyras. AWESOME job! Get one here: https://www.tindie.com/stores/thehognl/ <br/>
+Alternatively you can connect and control your Panasonic heat pump locally with Heishamon. The Heishamon board is created by Egyras. AWESOME job! Get one here: https://www.tindie.com/stores/thehognl/ <br/>
 ```mermaid
 ---
 config:
@@ -68,20 +68,20 @@ config:
 flowchart LR
     A((A
 		Panasonic    
-		Heatpump)) <---> B(B
+		Heat pump)) <---> B(B
 		Heishamon)
 	B <---> C{{C
 		MQTT Broker}}
     C <---> D(D
-		Node Red)
+		Node-Red)
 	style D fill:#f9f,stroke:#333,stroke-width:4px
 ```
-* []() A > B: The Panasonic heatpump communicates with the heishamon board
+* []() A > B: The Panasonic heat pump communicates with the heishamon board
 * []() B > C: Heishamon communicates with your MQTT broker
-* []() C > D: Node Red communicates with the MQTT brokker
+* []() C > D: Node-Red communicates with the MQTT broker
 
-I have chosen to use **Node Red** (=NR) as FrontEnd and automation platform. 
-In this repository you will find out all about this Node Red flow.
+I have chosen to use **Node-Red** (=NR) as FrontEnd and automation platform. 
+In this repository you will find out all about this Node-Red flow.
 
 [Top](#top)
 
@@ -89,14 +89,14 @@ In this repository you will find out all about this Node Red flow.
 
 ## What can `HeishaMoNR` do for you (the simple benefits)
 So, what can it do.
-* Offers **local control**. No dependancy on Panasonic Claud at all.
+* Offers **local control**. No dependency on Panasonic Cloud at all.
 * It provides a nice **dashboard**.
 * Shows detailed **graphs and charts** with real‑time or historical data.
 * Allows advanced **custom functions** such as CCC, RTC, SoftStart, and Solar‑driven DHW optimizations.
 * Works with **any sensor** for the custom functions. 
 * **Automations** using schedules with conditions.
 
-### A quick dashboard impression
+### Dashboard examples
 Here are just a few images to show the dashboard. For more images look in [the gallery.](documentation/gallery.md)
 
 *Home dashboard*<br>
