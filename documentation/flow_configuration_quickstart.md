@@ -11,7 +11,7 @@ Here is a shortlist for things you <ins>need</ins> to do or check and configure 
 Make sure you do them!
 
 > [!NOTE]
-> There are other instructions on how to configur the more advanced options. But the ones mentioned here, is the bare minimum for a quick start. 
+> There are other instructions on how to configure the more advanced options. But the ones mentioned here, is the bare minimum for a quick start. 
 
 [Back](flow_configuration.md)
 
@@ -22,8 +22,8 @@ When you start the Node Red flow for the first time, it requires some time to re
 
 | Config item  | Value |
 | ------------- | ------------- |
-| How often new values are collected from heatpump |	**5 seconds** |
-| How often all heatpump values are retransmitted to MQTT broker |	300 | 
+| How often new values are collected from heat pump |	**5 seconds** |
+| How often all heat pump values are retransmitted to MQTT broker |	300 | 
 
 [Top](#top) / [Back](flow_configuration.md)
 
@@ -55,21 +55,21 @@ You can verify the mqtt configuration from within the Node Red dashboard:
 ********
 
 ### 4 - Check MQTT block
-Rarely it hapens that the mqtt-block is triggered during first startup. Check to see if it is free.
+Rarely it happens that the mqtt-block is triggered during first startup. Check to see if it is free.
 - Open the Dashboard http://`<host-ip>`:1880/ui/ <br>
 - Go to tab **SYSTEM > MQTT** <br>
 - Check the "Block MQTT" toggle. It should be **off**
 
 > [!Note]
-> When for some reasone there is a major issue between the dashboard and the heatpump, you can disable the dashboard by turning the "Block MQTT" toggle **ON**.<br>
+> When for some reasone there is a major issue between the dashboard and the heat pump, you can disable the dashboard by turning the "Block MQTT" toggle **ON**.<br>
 > The Node Red flow will be in read-only mode then.<br><br>
-> :screwdriver: This "Block MQTT" is also usefull when doing maintenance.
+> :screwdriver: This "Block MQTT" is also useful when doing maintenance.
 
 [Top](#top) / [Back](flow_configuration.md)
 
 *********
 
-### 5 - Set time-Zone
+### 5 - Set time-zone
 You need to set the correct timezone <ins>within</ins> Node Red dashboard:
 - Open the Dashboard http://`<host-ip>`:1880/ui/ <br>
 - Go to tab **SYSTEM > SETTINGS** <br>
@@ -82,7 +82,7 @@ You need to set the correct timezone <ins>within</ins> Node Red dashboard:
 
 ### 6 - When (HEAT) Heating mode = Compensation Curve
 We need to make sure the <ins>Node Red CCC settings</ins> matches the <ins>Panasonic Compensation Curve settings</ins>.<br>
-First, you should know what your heating modes is:
+First, you should know what your heating mode is:
 - Direct
 - Compensation Curve
 
@@ -114,10 +114,10 @@ No further action is required
 
 ### 7 - When (COOL) Heating mode = Compensation Curve
 The flow is NOT yet designed to work with heating mode Compensation Curve for cooling.<br>
-Please set the heatpump in Direct mode for cooling if you want to use the function for cooling. 
+Please set the heat pump in Direct mode for cooling if you want to use the function for cooling. 
 
 > [!NOTE]
-> The `heating mode` for HEAT and COOL are set independantly.
+> The `heating mode` for HEAT and COOL are set independently.
 
 [Top](#top) / [Back](flow_configuration.md)
 

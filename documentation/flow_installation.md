@@ -22,7 +22,7 @@ In short, the steps you need to perform are:<br>
 ------------
 
 ### 2 Import the file
-Go to your Node Red flow editor. `http://<host-IP>:1880/#flow` (or `http://<host-IP>:1880/endpoint/ui` in HomeAssistant)<br>
+Go to your Node-Red flow editor. `http://<host-IP>:1880/#flow` (or `http://<host-IP>:1880/endpoint/ui` in HomeAssistant)<br>
 - Click the **hamburger icon** in the top right corner
 - Select **Import**
 - **Select** a **file** to import and select flow.json
@@ -53,8 +53,8 @@ You will see a list of configuration nodes appear below it.<br>
 <br>
 - Find and **edit** MQTT (x.x.x.x) (double click)<br>
 - Change/correct all settings of this node.
-	- Name: Rename x.x.x.x to a name of your own prefered name<br>
-	- Server: (if not present, add) IP adress of your MQTT brokker<br>
+	- Name: Rename x.x.x.x to a name of your own preferred name<br>
+	- Server: (if not present, add) IP address of your MQTT broker<br>
 	- Fill in the MQTT broker username and password
 	- Port: 1833 (default)<br>
 	- Protocol: MQTT v3.1.1 (maximum for heishamon)<br>
@@ -67,7 +67,7 @@ You will see a list of configuration nodes appear below it.<br>
 ---------
 
 #### 3.2 Theme `(optional)`
-Node Red allows you to personalize your dashboard.
+Node-Red allows you to personalize your dashboard.
 Just below the hamburger icon in the upper right corner, you might see a small drop-down box.
 - Click the **drop-down** and select **Dashboard**
 - Click on **Theme** <br>
@@ -76,7 +76,7 @@ Just below the hamburger icon in the upper right corner, you might see a small d
 ----------
 
 #### 3.3 Menu style `(optional)`
-Node red allows you to modify some menu behaviour of the dashboard.
+Node-red allows you to modify some menu behaviour of the dashboard.
 Just below the hamburger icon (from chapter 3.1 MQTT) you see a small drop-down box.
 - Click the **drop-down** and select **Dashboard**
 - Click on **Site** <br>
@@ -87,13 +87,13 @@ Just below the hamburger icon (from chapter 3.1 MQTT) you see a small drop-down 
 **********
 
 ### 4 Deploy the flow
-If you make changes in Node Red, the changes are not instantly live. You still need to deploy the changes. 
+If you make changes in Node-Red, the changes are not instantly live. You still need to deploy the changes. 
 - Click on **Deploy** in the upper right corner.<br>
 
 > [!TIP]
 > Click the **drop-down** icon on the [Deploy] button and select **Modified Nodes**<br>
 > <br>
-> Selecting this deploy method, makes deploying small changes to a flow a lot less impactfull for the entire system. It only deploys nodes that have been changed. So if you make a small modification somewhere, only those changes will be re-initialized. 
+> Selecting this deploy method, makes deploying small changes to a flow a lot less impactful for the entire system. It only deploys nodes that have been changed. So if you make a small modification somewhere, only those changes will be re-initialized. 
 
 [Top](#top) / [Back](../readme.md)
 

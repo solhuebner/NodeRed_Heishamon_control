@@ -20,13 +20,13 @@ The flow contains custom functions and special features. The purpose of each one
 <a id="pumpspeed"></a>
 ### Pumpspeed
 ![](https://github.com/edterbak/NodeRed_Heishamon_control/blob/main/images/dashboard/v24.00_pumpspeed.png?raw=true)  
-This function allows you to set dynamic pump speeds, depending on the current operation. The reason you might want to do this, is that the piping length and diameter between the two water circuits are completly different and require a different optimal flow.<br>
+This function allows you to set dynamic pump speeds, depending on the current operation. The reason you might want to do this, is that the piping length and diameter between the two water circuits are completely different and require a different optimal flow.<br>
 Set a different maximum water flow during DHW operation. <br>
 Set a different maximum water flow during HEAT operation.
 You can set a default (low) maximum water flow. This is active when both operations are inactive (with active compressor).  
 <br>
 > [!NOTE]
-> Do not set the maximum flow too low. It causes irratic behavior and a LOT of stop/starts.<br>
+> Do not set the maximum flow too low. It causes erratic behavior and a LOT of stop/starts.<br>
 > Do not set the maximum flow too high. It causes the pump to stay longer on high compressor frequencies
 
 [Top](#top) / [Back](flow_configuration.md)
@@ -43,7 +43,7 @@ You can set a default (low) maximum water flow. This is active when both operati
 **Question**: Why have you created the same custom function while Panasonic provided the same function as "Compensation Curve"?   
 **Answer**: The native Panasonic implementation is limited to the in-built thermocouple or connected external temperature sensor. Both are affected by direct sunlight and show incorrect values then. The custom function is able to use **any** sensor which is able to produce values into Node Red. Personally I use "OpenWeatherMap" as a source. But any local sensor can be used. 
 
-You can import / export settings to the panasonic heat pump.
+You can import / export settings to the Panasonic heat pump.
 
 [Top](#top) / [Back](flow_configuration.md)
 
@@ -68,9 +68,9 @@ Additionally it is possibility to use automation's. To have the pump shut down w
 ### SoftStart:
 ![](https://github.com/edterbak/NodeRed_Heishamon_control/blob/main/images/dashboard/v24.00_softstart.png?raw=true)
 
-Default behavior of the heat pump is when it starts up the compressor will go to high Hz for a period. Only when the returning water temperature approaches the setpoint, it ramps down the Hz and get more economic.<br/><br/>
+Default behavior of the heat pump is when it starts up the compressor will go to high Hz for a period. Only when the returning water temperature approaches the setpoint, it ramps down the Hz and become more economic.<br/><br/>
 
-If the SoftStart function is enabled and the compressor starts, the water setpoint will be lowered. This should cause the compressor to ramp the compressor down quicker, within minutes. When ramp down of the compressor frequency has occurred, the HEAT setpoint restrictions will gradually be lifted.<br/>
+If the SoftStart function is enabled and the compressor starts, the water setpoint will be lowered. This should cause the compressor to ramp down quicker, within minutes. When ramp down of the compressor frequency has occurred, the HEAT setpoint restrictions will gradually be lifted.<br/>
 
 There's an add-on to the SoftStart called SoftStart-Quietmode
 
@@ -120,7 +120,7 @@ On each line of the scheduler, you can indicate if the heat pump should be power
 
 A recent addition to the scheduler is the possibility to add conditions for each of the scheduled tasks.  
 > [!NOTE]
-> Make sure the native panasonic scheduler (in the controller) is disabled to prevent unexpected behavior of the flow.
+> Make sure the native Panasonic scheduler (in the controller) is disabled to prevent unexpected behavior of the flow.
 
 <a id="conditions"></a>
 #### Conditions
@@ -128,7 +128,7 @@ A recent addition to the scheduler is the possibility to add conditions for each
 Each line in the condition section is a blocking condition. If the condition is met, the scheduled task will be blocked.  
 The measurements and values you can use as a condition are:
 - DHW temperature is above ...
-- time since last sterelization is less than ...
+- time since last sterilization is less than ...
 - time since last DHW temp was on target temperature is less than ...
 - time since previous trigger of this scheduled action is less than ...
 - Outside temperature is higher than ...

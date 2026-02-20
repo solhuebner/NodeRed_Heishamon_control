@@ -1,15 +1,13 @@
-
-<a id="donations"></a>
 ## Donations
-By multiple users of the Node Red flow, I have been asked to put up a donation on the site. I was never that fond of that idea, because it is just my hobby and I like doing it. In addition, I do not want to change the expectation of users, the open character of the communication here (moving from one enthusiast>enthusiast to a supplier>client relationship).  
+By multiple users of the Node-Red flow, I have been asked to put up a donation on the site. I was never that fond of that idea, because it is just my hobby and I like doing it. In addition, I do not want to change the expectation of users, the open character of the communication here (moving from one enthusiast>enthusiast to a supplier>client relationship).  
 This remains just a hobby, and I do not expect I can quit my daytime job because of this anytime soon.. Ghhehehe.. And of course it will stay like this.<br>
 But the constant raising eyebrows of my social circle why I don't have such a button (because everyone else seems to do it..), and the curiosity about how many users actually want to make a donation have won me over to try such a button. Let's see. <br>
 <br>
-But most important. In no way you are obliged to make any donation!! The flow remains completely free, free to use, free to change as you want. And as always at your own risk. <br>
+But most important. You are in no way obliged to make any donation!! The flow remains completely free, free to use, free to change as you want. And as always at your own risk. <br>
 
 > [!NOTE]
 > **Update:** It has been little over a year now since I put up a donation button on the github page...<br><br>
-> I feel humbled by the donations and more so by the kind words that came with it. The donations are absolutly **not** required and I truely did not expect this at all. So again, I am humbled by the appreciation shown. Thank you all.
+> I feel humbled by the donations and more so by the kind words that came with it. The donations are absolutely **not** required and I truly did not expect this at all. So again, I am humbled by the appreciation shown. Thank you all.
 
 <br>
 

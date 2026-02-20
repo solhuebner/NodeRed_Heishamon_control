@@ -3,8 +3,8 @@
 ## Installation details for Node Red<br/>
 
 1. [Node Red installation](#requirements)
-	- [Persistant storage](#persistant_storage)
- 	- [Required Node Red libraries/pallets](#node_red_libraries)
+	- [Persistent storage](#persistent_storage)
+ 	- [Required Node Red libraries/palettes](#node_red_libraries)
   	- [Timezone setup](#time_zone)
 2. [Flow installation](flow_installation.md)
 
@@ -14,8 +14,8 @@
 ## Node Red installation
 There are some things required for the Node Red installation itself. <br>
 - First; You want your data and settings to survive a reboot, so persistent storage is a must. <br>
-- Second; The flow makes use of some node red libraries (or pallettes). These need to be installed.<br>
-- Third; It is advicable to know if you system is setup with the correct time/date. <br>
+- Second; The flow makes use of some node red libraries (or palettes). These need to be installed.<br>
+- Third; It is advisable to know if you system is setup with the correct time/date. <br>
 
 These will be explained here. <br>
 
@@ -23,9 +23,9 @@ These will be explained here. <br>
 
 ****
 
-<a id="persistant_storage"></a>
-### Persistant storage
-You need to change some settings in settings.js to enabled persistent storage.<br/>
+<a id="persistent_storage"></a>
+### Persistent storage
+You need to change some settings in settings.js to enable persistent storage.<br/>
 In addition it is a good idea to reduce the frequency of writing to your disk. 
 
 In a (proxmox) docker install, you can find this settings.js file in:
@@ -61,7 +61,7 @@ Reboot Node Red for the changes to be applied.<br/>
 ****
 
 <a id="node_red_libraries"></a>
-### Required Node Red libraries/pallets
+### Required Node Red libraries/palettes
 - To make use of the dashboard functionality, you need to install the dashboard library.<br/>
 		https://flows.nodered.org/node/node-red-dashboard <br/>
 - The scheduler makes use of the moment lib<br/>
@@ -74,7 +74,7 @@ Reboot Node Red for the changes to be applied.<br/>
 		https://flows.nodered.org/node/node-red-node-ui-table
 
 > [!NOTE]
-> The Dashboard 1.0 pallette is indeed depricated by Node Red. But I have not migrated to Dashboard 2.0 yet. (=ToDo) Despite that, it still works fine.
+> The Dashboard 1.0 pallette is indeed deprecated by Node Red. But I have not migrated to Dashboard 2.0 yet. (=ToDo) Despite that, it still works fine.
 
 [Top](#top) / [Back](../readme.md)
  

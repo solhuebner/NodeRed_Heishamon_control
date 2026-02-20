@@ -14,12 +14,12 @@ The steps will be described in more details below
 
 ### 1 - Create a backup
 This step is actually only required if you have made modifications to the current flow. <br>
-- Ìn the flow editor **Select** all the **tabs** with [WP ...] in the name. 
+- In the flow editor **Select** all the **tabs** with [WP ...] in the name. 
 - Click the **hamburger icon** in the upper right corner
 - Press **Export**<br>
 Make sure "Selected nodes" is active
 - Click **[Download]**
-- Save the file to your local drive with a usefull prefix / postfix, like "backup" and the date. 
+- Save the file to your local drive with a useful prefix / postfix, like "backup" and the date. 
 
 > [!TIP]
 > - To multi-select specific tabs, use [CTRL] + click
@@ -38,7 +38,7 @@ Go to the github page and save the flow.json file to your local drive.
 ### 3 - Remove current version
 
 #### 3.1 - Remove all tabs
-In the Node Red flow-editor, you need to:
+In the Node-Red flow editor, you need to:
 - **Select** all flow-tabs which start with [WP ] on the top of the screen
 - Press **[DEL]**
 - Wait until it is finished
@@ -51,7 +51,7 @@ In the Node Red flow-editor, you need to:
 > - To multi-select a row of tabs, use [SHIFT] + click
 
 > [!CAUTION]
-> If you select too many tabs and press [DEL], the **browser** might **time-out**.
+> If you select too many tabs and press [DEL], the **browser** might **timeout**.
 > This Process just takes a long time depending on your resources.
 > Wait or select "Wait for browser" a number of times for it to finish. If that does not work, reduce the amount of selected tabs for deletion.
 

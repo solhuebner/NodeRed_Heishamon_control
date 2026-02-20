@@ -14,7 +14,7 @@ So, please start with that.
 Why? <br>
 - You need to make sure the very basics of the dashboard are working as expected.
 - You need to build up a reference feel and insights on the basic operation.
-- You will likely see a lot of new things like indicaters or knobs to turn. Diving in the depth directly, is a bad idea and could get you lost.
+- You will likely see a lot of new things like indicators or knobs to turn. Diving in the depth directly, is a bad idea and could get you lost.
 
 Only after you have confidence that the dashboard is working correctly, continue with the next steps.
 
@@ -22,7 +22,7 @@ Only after you have confidence that the dashboard is working correctly, continue
 
 ### Rule 2: Configure the functions in the right order
 There is only **one** correct order of configuring functions. If you do not follow this order, you can expect discomfort.<br>
-The basic order is `top-down`. From big imact to little impact.
+The basic order is `top-down`. From big impact to little impact.
 
 1. CCC (Custom Compensation Curve)<br>
 2. RTC (Room Temperature Correction)
@@ -51,10 +51,10 @@ First verify it is the function that is at fault by disabling the function.
 [Top](#top) / [Back](../readme.md)
 
 *******
-### Rule 5: A heatpump has a stable operating window
-If you set the target temperature (HEAT) of the heatpump too low, it has the following consequense:
-1. The temperature difference of your internal house vs water temperaturer decreases. This is the drivingforce for heat-energy flow. This dictates the dissapation rate of heat-energy from the heatpump into your house.
-2. The heatpump has a minimum amount of heat produced. It can not reduce the compressor frequency more.
+### Rule 5: A heat pump has a stable operating window
+If you set the target temperature (HEAT) of the heat pump too low, it has the following consequence:
+1. The temperature difference of your internal house vs water temperature decreases. This is the driving force for heat-energy flow. This dictates the dissipation rate of heat-energy from the heat pump into your house.
+2. The heat pump has a minimum amount of heat produced. It can not reduce the compressor frequency more.
 
 If you balance these two incorrectly, you will have by nature a lot of stop-starts of the compressor. <br>
 The SoftStart function cannot solve that. 

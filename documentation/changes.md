@@ -9,7 +9,7 @@ The versioning received an update because the logic in it was nowhere to be foun
 
 ### Changes in version 26.2.1 stable compared to 25.x stable
 <ins>HUGE changes:</ins></br>
-- Gave the project a name. Meet: "HeishaMoNR"
+- Gave the project a name. Meet "HeishaMoNR"
 - Added support for **zone 2** (rewrite)
 - Added support for **buffer tank** (rewrite)
 - Added generic **MQTT-command manager** functionality. It checks if commands are picked up by the Panasonic. If not it retries 3x
@@ -25,10 +25,10 @@ The versioning received an update because the logic in it was nowhere to be foun
 - Added extra external Link-In options. See right side of [WP Input]-tab. 
 
 <ins>Other noteworthy changes:</ins></br>
-- SoftStart function rewrite to accomodate for buffertank and multizone setups</br>
+- SoftStart function rewrite to accommodate for buffertank and multizone setups</br>
 - Improved charts. Now surviving reboots</br>
 - Allow sending HEAT setpoints in all operating modes</br>
-- Removed all QOS 1 and 2 on mqtt nodes. It is not supported</br>
+- Removed all QoS 1 and 2 on mqtt nodes. It is not supported</br>
 - Added more Panasonic pump versions to detect</br>
 - Fan 2 auto-show/hide when it is detected</br>
 
@@ -74,5 +74,5 @@ SoftStart function:</br>
 Miscellaneous Fixes:</br>
 - Reading Panasonic details logic rewritten for fw3.9</br>
 - Powerful mode toggle fix</br>
-- Pressure readout (TOP115) added</br>
+- Added TOP115 pressure readout</br>
 
