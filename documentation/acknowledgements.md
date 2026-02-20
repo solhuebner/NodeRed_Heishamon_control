@@ -1,14 +1,14 @@
-## Acknowledgments
+## Acknowledegments
 
 * []() Egyras: The original creator of Heishamon. https://github.com/Egyras
 * []() Egyras: For the MQTT topic list - https://github.com/Egyras/HeishaMon/blob/master/MQTT-Topics.md
 * []() CurlyMo: The original calculation for automagical 'Stooklijn' correction - https://gathering.tweakers.net/forum/list_messages/2039982#Automagische_stooklijncorrectie
 * []() AUijtdehaag: The COP calculation - https://github.com/Dylantje/WP-Heishamon-sripts/blob/master/WP%20LUA%20COP%20berekening
-* []() lampy25. For unselfishly giving supportive feedback and good idea's. Thanks!
-* []() timovd for his contributions. ! Thanks.
-* []() E1cid from Node Red forum, for the help with the bar-chart. 
+* []() lampy25. For unselfishly giving supportive feedback and good ideas. Thanks!
+* []() timovd for his contributions. Thanks!
+* []() E1cid from Node-Red forum, for the help with the bar-chart. 
 * []() Javaboon for his assistance in the Solar functionality.
-* []() Maarten69 for his feature requests and helping with testing. MEGAAA THANKS :).
+* []() Maarten69 for his feature requests and helping with testing. MEGA THANKS :).
 * []() Maarten69 (yes, again) for contributing to this project and helping with a FAQ !!!!! :).
 * []() Aikon for contributing to this project and helping with layout/textual improvements.
 * []() Maarten69 for contributing to this project. New additions can be expected from him on this project. Mega sweet!!
@@ -21,7 +21,7 @@
 
 ## Thank you
 
-Ever person in the list above has been a big help to me in one way or another. Do not underestimate your role and value it holds for me. <br>I would not have kept the energy and drive to keep this project alive without all of these enthusiastic people. Bouncing back and forth idea's, having good discussions and always with a positive vibe. I appreciate and value all of you. Thank you all very much!!! 
+Every person in the list above has been a big help to me in one way or another. Do not underestimate the role and value you hold for me. <br>I would not have kept the energy and drive to keep this project alive without all of these enthusiastic people. Bouncing idea's back and forth, having good discussions and always with a positive vibe. I appreciate and value all of you. Thank you all very much!!! 
 
 Obviously, I am proud of the thing we created together.
 
