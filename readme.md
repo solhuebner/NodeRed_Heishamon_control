@@ -13,7 +13,8 @@
 </span>
 
 ********
-
+**Previously called:** Node Red dashboard for Heishamon
+<br><br>
 **Current version:** v26.2.1 Stable<br>
 **Release date:** 2026-02-19
 
@@ -110,3 +111,4 @@ Here are just a few images to show the dashboard. For more images look in [the g
 [Top](#top)
 
 ********
+
