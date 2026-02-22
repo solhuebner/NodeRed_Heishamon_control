@@ -18,6 +18,7 @@ Sometimes a new feature of dashboard function is introduced which requires a new
 Check the Node-Red requirements [here](nodered_installation.md#required-node-red-librariespallets)
 
 ### 2 - Create a backup
+Take some screenshots of your current settings in the dashboard. Keep them for reference, just in case. <br><br>
 This step is actually only required if you have made modifications to the current flow. <br>
 - In the flow editor **Select** all the **tabs** with [WP ...] in the name. 
 - Click the **hamburger icon** in the upper right corner
@@ -88,6 +89,7 @@ Then:
 ********
 
 [Back](../readme.md)
+
 
 
 
