@@ -1,7 +1,7 @@
 ## Updating the flow
 
 To update the flow to a newer version, you need to perform the next steps:<br>
-1. Check Node-Red pallettes
+1. Check Node-Red requirements
 2. Create a backup<br>
 3. Download the latest flow.json<br>
 4. Remove current version<br>
@@ -13,7 +13,7 @@ The steps will be described in more details below
 
 **************
 
-### 1 - Check Node-Red pallettes
+### 1 - Check Node-Red requirements
 Sometimes a new feature of dashboard function is introduced which requires a new pallette. <br>
 Check the Node-Red requirements [here](nodered_installation.md#required-node-red-librariespallets)
 
@@ -88,5 +88,6 @@ Then:
 ********
 
 [Back](../readme.md)
+
 
 
