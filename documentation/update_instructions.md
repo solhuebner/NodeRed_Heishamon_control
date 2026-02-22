@@ -1,18 +1,23 @@
 ## Updating the flow
 
 To update the flow to a newer version, you need to perform the next steps:<br>
-1. Create a backup<br>
-2. Download the latest flow.json<br>
-3. Remove current version<br>
-4. Import new version<br>
-5. Adjust settings<br>
-6. Deploy<br>
+1. Check Node-Red pallettes
+2. Create a backup<br>
+3. Download the latest flow.json<br>
+4. Remove current version<br>
+5. Import new version<br>
+6. Adjust settings<br>
+7. Deploy<br>
 
 The steps will be described in more details below
 
 **************
 
-### 1 - Create a backup
+### 1 - Check Node-Red pallettes
+Sometimes a new feature of dashboard function is introduced which requires a new pallette. <br>
+Check the Node-Red requirements [here](nodered_installation.md#required-node-red-librariespallets)
+
+### 2 - Create a backup
 This step is actually only required if you have made modifications to the current flow. <br>
 - In the flow editor **Select** all the **tabs** with [WP ...] in the name. 
 - Click the **hamburger icon** in the upper right corner
@@ -30,14 +35,14 @@ Make sure "Selected nodes" is active
 
 *********
 
-### 2 - Download the latest flow.json
+### 3 - Download the latest flow.json
 Go to the github page and save the flow.json file to your local drive.
 
 *************
 
-### 3 - Remove current version
+### 4 - Remove current version
 
-#### 3.1 - Remove all tabs
+#### 4.1 - Remove all tabs
 In the Node-Red flow editor, you need to:
 - **Select** all flow-tabs which start with [WP ] on the top of the screen
 - Press **[DEL]**
@@ -56,7 +61,7 @@ In the Node-Red flow editor, you need to:
 > Wait or select "Wait for browser" a number of times for it to finish. If that does not work, reduce the amount of selected tabs for deletion.
 
 
-#### 3.2 - Remove dashboard items
+#### 4.2 - Remove dashboard items
 
 In the flow editor:
 - Click the **hamburger icon** in the upper right corner
@@ -83,4 +88,5 @@ Then:
 ********
 
 [Back](../readme.md)
+
 
