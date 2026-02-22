@@ -38,7 +38,8 @@ Assuming a sensor is available and reporting in Node-Red, here are the steps to 
 3. Double-click on the link-out node and copy the **Name**
   Example: "link out 123"
 <br>
-<img src="../images/dashboard/flow_configuration_external_sensors_01.png" width=50%> <br>
+
+<img src="../images/dashboard/flow_configuration_external_sensor_01.png" width=50%> <br>
 
 4. Go to the **[WP Input]** tab
 5. Look for the correct grey **link in** node<br>
@@ -48,7 +49,7 @@ Double click it to **edit**<br>
 Click **[Done]** <br>
 Click on **[Deploy]** to save your changes<br>
 
-<img src="../images/dashboard/flow_configuration_external_sensors_02.png" width=50%><br>
+<img src="../images/dashboard/flow_configuration_external_sensor_02.png" width=50%><br>
 
 [Top](#top) / [Back](flow_configuration.md)
 
@@ -123,3 +124,4 @@ What is **not** working:
 [Top](#top) / [Back](flow_configuration.md)
 
 ********
+
