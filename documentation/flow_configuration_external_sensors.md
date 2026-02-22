@@ -66,7 +66,7 @@ In the dashboard:
 3. **Select** the right topic in the list
 4. Confirm it is correct when new values are received
 
-<img src="../images/dashboard/flow_configuration_external_sensors_03.png" width=60%><br>
+<img src="../images/dashboard/flow_configuration_external_sensor_03.png" width=60%><br>
 
 > [!NOTE]
 > Be aware that the value of the sensor is only populated after it has been selected AND when a new value is received.
@@ -124,4 +124,5 @@ What is **not** working:
 [Top](#top) / [Back](flow_configuration.md)
 
 ********
+
 
