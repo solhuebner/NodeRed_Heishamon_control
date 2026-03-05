@@ -7,12 +7,25 @@ The versioning received an update because the logic in it was nowhere to be foun
 
 ## Changes
 
+***
+
+### Version 26.3.1 Stable
+Release date: 2026-03-05<br>
+Changes:</br>
+- New heishamon firmware 4.0 released. Confirmed working perfectly</br>
+- Added 5 new models to be recognized</br>
+- Modified the behaviour of Force_DHW logic. Should be more robust now</br>
+Version 26.2.1 Stable</br>
+</br>
+
+***
+
 ### Changes in version 26.2.1 stable compared to 25.x stable
 <ins>HUGE changes:</ins></br>
-- Gave the project a name. Meet "HeishaMoNR"
-- Added support for **zone 2** (rewrite)
-- Added support for **buffer tank** (rewrite)
-- Added generic **MQTT-command manager** functionality. It checks if commands are picked up by the Panasonic. If not it retries 3x
+- Gave the project a name. Meet "HeishaMoNR"</br>
+- Added support for **zone 2** (rewrite)</br>
+- Added support for **buffer tank** (rewrite)</br>
+- Added generic **MQTT-command manager** functionality. It checks if commands are picked up by the Panasonic. If not it retries 3x</br>
 
 
 <ins>Big changes:</ins></br>
@@ -75,4 +88,5 @@ Miscellaneous Fixes:</br>
 - Reading Panasonic details logic rewritten for fw3.9</br>
 - Powerful mode toggle fix</br>
 - Added TOP115 pressure readout</br>
+
 
