@@ -15,8 +15,8 @@
 ********
 **Previously called:** Node Red dashboard for Heishamon
 <br><br>
-**Current version:** v26.3.1 Stable<br>
-**Release date:** 2026-03-05
+**Current version:** v26.4.1 Stable<br>
+**Release date:** 2026-04-11
 
 ********
 
