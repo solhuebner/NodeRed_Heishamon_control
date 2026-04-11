@@ -8,6 +8,11 @@ The versioning received an update because the logic in it was nowhere to be foun
 ## Changes
 
 ***
+### Version 26.4.1 Stable
+Changes:</br>
+- Modified behaviour for RTC automation. It is more robust now. Always triggers, even after restarts<br>
+- Heat setpoint on Dashboard - Home is now always up-to-date<br>
+- Added 3 new models to be recognized</br>
 
 ### Version 26.3.1 Stable
 Release date: 2026-03-05<br>
